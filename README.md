@@ -170,7 +170,7 @@ sudo make
 
 #### 4. 配置DOL
 
- 1. 解压dol_ethz.zip
+ - 解压dol_ethz.zip
 ```
 # 新建dol的文件夹 
 mkdir dol
@@ -178,7 +178,7 @@ mkdir dol
 unzip dol_ethz.zip -d dol
 ```
 
- 2. 用gedit打开build_zip.xml：
+ - 用gedit打开build_zip.xml：
  找到下面这段话
 
         <property name="systemc.inc" value="YYY/include"/>
@@ -186,14 +186,14 @@ unzip dol_ethz.zip -d dol
  把YYY改成安装SystemC的安装路径（/home/rainbow/apps/libs/systemc-2.3.1），对于64位系统的机器，lib-linux要改成lib-linux64。
  
 
- 3. 编译build_zip.xml
+ - 编译build_zip.xml
 ```
 ant -f build_zip.xml all
 ```
 编译成功会显示下图
 ![build_zip.xml编译][7]
 
- 4. 测试示例
+ - 测试示例
 ```
 cd build/bin/main
 sudo ant -f runexample.xml -Dnumber=1
