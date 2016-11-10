@@ -188,17 +188,17 @@ The goal of the DOL mapping optimization is to compute a set of optimal mappings
        ```  
       把YYY改成安装SystemC的安装路径（/home/rainbow/apps/libs/systemc-2.3.1）  
       对于64位系统的机器，lib-linux要改成lib-linux64。   
-    - 编译build_zip.xml
+    - 编译build_zip.xml  
         ```
         ant -f build_zip.xml all
-        ```
+        ```  
     编译成功会显示下图  
-    ![build_zip.xml编译][7]
-    - 测试示例
+    ![build_zip.xml编译][7]  
+    - 测试示例  
         ```
         cd build/bin/main
         sudo ant -f runexample.xml -Dnumber=1
-        ```
+        ```  
     编译成功如下图  
     ![runexample.xml编译][8]
 
