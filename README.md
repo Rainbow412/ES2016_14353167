@@ -60,37 +60,42 @@ The goal of the DOL mapping optimization is to compute a set of optimal mappings
         source ~/.bashrc
         ```
     - 配置默认JDK  
-     /usr/lib/java/jdk8/为JDK所在路径
+     /usr/lib/java/jdk8/为JDK所在路径  
+
         ```
-        sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk8/bin/java 300
-        sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk8/bin/javac 300
+        sudo update-alternatives --install /usr/bin/java java /usr/lib/java/jdk8/bin/java 300  
+        sudo update-alternatives --install /usr/bin/javac javac /usr/lib/java/jdk8/bin/javac 300  
         ```  
-    - 验证配置是否成功
+        
+    - 验证配置是否成功  
+    
         ```
         java -version	# 查看JDK版本
         java
         javac
-        ```
+        ```  
+ 
         输入java -version结果如下图  
         ![java -version][1]  
         输入java结果如下图  
         ![java][2]  
         输入javac结果如下图  
-        ![javac][3]
+        ![javac][3]  
 
 2. 配置Ant环境
 ```
 sudo apt-get install ant
 ```  
     - 验证是否安装成功  
- 
-         ```
-         ant
-         ```  
+    
+        ```
+        ant
+        ```  
 
         输入ant结果如下图  
-         ![ant][4]
-
+        ![ant][4]  
+  
+  
 3. 配置SystemC  
     - 安装与配置  
  
