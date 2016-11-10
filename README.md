@@ -83,9 +83,9 @@ The goal of the DOL mapping optimization is to compute a set of optimal mappings
         ![javac][3]  
 
 2. 配置Ant环境
-```
-sudo apt-get install ant
-```  
+ ```
+ sudo apt-get install ant
+ ```  
     - 验证是否安装成功  
     
         ```
@@ -94,7 +94,6 @@ sudo apt-get install ant
 
         输入ant结果如下图  
         ![ant][4]  
-  
   
 3. 配置SystemC  
     - 安装与配置  
@@ -182,13 +181,13 @@ sudo apt-get install ant
         unzip dol_ethz.zip -d dol      
         ```
     - 用gedit打开build_zip.xml：  
-     找到下面这段话
-         ```
+     找到下面这段话  
+       ```
         <property name="systemc.inc" value="YYY/include"/>
         <property name="systemc.lib" value="YYY/lib-linux/libsystemc.a"/>
-        ```       
-     把YYY改成安装SystemC的安装路径（/home/rainbow/apps/libs/systemc-2.3.1）  
-     对于64位系统的机器，lib-linux要改成lib-linux64。   
+       ```  
+      把YYY改成安装SystemC的安装路径（/home/rainbow/apps/libs/systemc-2.3.1）  
+      对于64位系统的机器，lib-linux要改成lib-linux64。   
     - 编译build_zip.xml
         ```
         ant -f build_zip.xml all
